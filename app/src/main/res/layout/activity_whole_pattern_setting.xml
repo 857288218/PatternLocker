@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/AppTheme.Toolbar"
+        app:title="@string/title_pattern_setting" />
+
+    <TextView
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:text="重设"
+        android:id="@+id/tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="绘制解锁图案"
+        android:textColor="@color/color_black"
+        android:textSize="16dp" />
+
+    <com.github.ihsg.patternlocker.PatternIndicatorView
+        android:id="@+id/patternIndicatorView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        app:piv_color="@color/color_d9"
+        app:piv_fillColor="@color/color_d9"
+        app:piv_hitColor="@color/color_696fd8"
+        app:piv_is_show_linked_line="false"
+        app:plv_lineWidth="2dp" />
+
+    <com.github.ihsg.patternlocker.PatternLockerView
+        android:id="@+id/patternLockerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        app:plv_enableSkip="true"
+        app:plv_color="@color/color_gray"
+        app:plv_enableAutoClean="true"
+        app:plv_freezeDuration="300"
+        app:plv_errorColor="@color/color_ff684e"
+        app:plv_fillColor="@color/colorWhite"
+        app:plv_hitColor="@color/color_696fd8"
+        app:plv_lineWidth="1dp" />
+
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clean" />
+
+
+</LinearLayout>
