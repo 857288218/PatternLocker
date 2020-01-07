@@ -16,10 +16,6 @@
 ## 预览效果图
 ![setting](./captures/captures.png)
 
-[点击下载PatternLockerDemo.apk](https://fir.im/qvhx) 或者扫描下方二维码下载安装   
-
-![download](./captures/download_xcode.png)
-
 ## 自由定制
 
 ### 1. 默认样式简单定制   
@@ -208,9 +204,3 @@ patternIndicatorView.linkedLineView = ... //定制实现
 ```
 
 > 温馨提示：更详细的定制方式可参考Library中default开头的代码。
-
-### 联系方式（微信）
-
-当你遇到问题时，请先看demo了解用法，如果还是没有解决又比较着急，可以通过微信联系我哦！
-
-![微信](./captures/hsg_Wechat_QR.jpeg)
